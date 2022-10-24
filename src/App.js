@@ -10,7 +10,10 @@ class App extends Component {
     super(props);
     this.state = {
       foo: "bar",
-      resumeData: {},
+      resumeData: {
+        name: "Ever Inox",
+        description: "The Best Stainless Steel Products",
+      },
     };
   }
 

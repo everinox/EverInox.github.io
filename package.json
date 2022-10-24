@@ -1,5 +1,5 @@
 {
-  "name": "reactniceresume",
+  "name": "everinox",
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
@@ -14,7 +14,7 @@
     "react-dom": "^17.0.1",
     "react-ga": "^3.3.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^0.9.3",
     "react-zmage": "^0.8.5-beta.36",
     "web-vitals": "^1.0.1"
   },
@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "chokidar": "^3.5.1"
+    "chokidar": "^3.5.1",
+    "gh-pages": "^4.0.0"
   }
 }

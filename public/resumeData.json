@@ -1,16 +1,16 @@
 {
   "main": {
-    "name": "Ever Inox",
-    "description": "We Delivery best",
+    "name": "EverInox Middle East",
+    "description": "We delivery the top-notch quality products and services for your fabrication needs!",
     "image": "everinox.png",
-    "bio": "We Delivery the best quality products and services for your business needs.",
+    "bio": "Stainless Steel Products and all kinds of fabrication",
     "contactmessage": "Write to us , we will contact you shortly.",
     "email": "sales@everinox.me",
-    "phone": "+97165696530",
+    "phone": "+971-50-827-2304",
     "github": "https://github.com/nordicgiant2/react-nice-resume",
     "project": "https://github.com/nordicgiant2/react-nice-resume",
     "address": {
-      "street": "Al Shmook business center, One UAQ, UAQ Free Trade zone",
+      "street": "Al Shmook Business Center, One UAQ, UAQ Free Trade Zone",
       "city": "Umm Al Quwain",
       "state": "UAE",
       "zip": ""

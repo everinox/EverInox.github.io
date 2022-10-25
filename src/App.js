@@ -14,7 +14,8 @@ class App extends Component {
     };
   }
   getData() {
-    const url = `${window.location.href}/resumeData.json`;
+    const isLocalhost = window.origin.includes("localhost");
+    const url = isLocalhost ? "/resumeData.json" : `/everinox/resumeData.json`;
 
     $.ajax({
       url,

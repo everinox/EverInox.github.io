@@ -4,20 +4,32 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
-
+import $ from "jquery";
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       foo: "bar",
-      resumeData: {
-        name: "Ever Inox",
-        description: "The Best Stainless Steel Products",
-      },
+      resumeData: {},
     };
   }
-
-  componentDidMount() {}
+  getData() {
+    $.ajax({
+      url: "/resumeData.json",
+      dataType: "json",
+      cache: false,
+      success: function (data) {
+        this.setState({ resumeData: data });
+      }.bind(this),
+      error: function (xhr, status, err) {
+        console.log(err);
+        alert(err);
+      },
+    });
+  }
+  componentDidMount() {
+    this.getData();
+  }
 
   render() {
     return (

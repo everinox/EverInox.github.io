@@ -14,8 +14,10 @@ class App extends Component {
     };
   }
   getData() {
+    const url = `${window.location.href}/resumeData.json`;
+
     $.ajax({
-      url: "/resumeData.json",
+      url,
       dataType: "json",
       cache: false,
       success: function (data) {

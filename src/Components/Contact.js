@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
+  handleChange(event) {
+    console.log("change");
+  }
   render() {
     if (!this.props.data) return null;
 
@@ -11,6 +14,7 @@ class Contact extends Component {
     const state = this.props.data.address.state;
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
+    const email = this.props.data.email;
     const message = this.props.data.contactmessage;
 
     return (
@@ -114,6 +118,8 @@ class Contact extends Component {
                   {city}, {state} {zip}
                   <br />
                   <span>{phone}</span>
+                  <br />
+                  <span>{email}</span>
                 </p>
               </div>
 

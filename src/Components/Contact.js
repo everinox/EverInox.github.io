@@ -2,8 +2,38 @@ import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {
+      contactName: "",
+      contactEmail: "",
+      contactMessage: "",
+      contactSubject: "",
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.submitInfo = this.submitInfo.bind(this);
+    this.isValid = this.isValid.bind(this);
+  }
   handleChange(event) {
-    console.log("change");
+    console.log("change", event.target.id);
+    this.setState({ [event.target.id]: event.target.value });
+  }
+  isValid() {
+    return (
+      this.state.contactName &&
+      this.state.contactEmail &&
+      this.state.contactMessage &&
+      this.state.contactSubject
+    );
+  }
+  submitInfo() {
+    if (this.isValid()) {
+      window.open(
+        `mailto:sales@everinox.me?subject=${this.state.contactSubject}&body=${this.state.contactMessage}`,
+      );
+    } else {
+      alert("Please fill all the fields");
+    }
   }
   render() {
     if (!this.props.data) return null;
@@ -36,7 +66,7 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+              <form>
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -87,11 +117,14 @@ class Contact extends Component {
                       rows="15"
                       id="contactMessage"
                       name="contactMessage"
+                      onBlur={this.handleChange}
                     ></textarea>
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button onClick={this.submitInfo} className="submit">
+                      Submit
+                    </button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>

@@ -33,7 +33,7 @@ const About = ({ data }) => {
                       {address.city} {address.state}, {address.zip}
                     </span>
                     <br />
-                    <span>{phone}</span>
+                    <span>{address.mobile}</span>
                     <br />
                     <span>{email}</span>
                   </p>

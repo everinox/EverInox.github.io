@@ -1,10 +1,10 @@
-import React from "react";
-import Fade from "react-reveal";
+import React from 'react';
+import Fade from 'react-reveal';
 
 const About = ({ data }) => {
   if (!data) return null;
 
-  const {  bio, addresses, phone, email } = data;
+  const { bio, addresses, email } = data;
 
   return (
     <section id="about">

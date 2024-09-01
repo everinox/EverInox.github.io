@@ -1,9 +1,9 @@
 {
   "main": {
-    "name": "EverInox Middle East",
+    "name": "Everinox Metals Inc.",
     "description": "We deliver the top-notch quality products and services for your fabrication needs!",
     "image": "everinox.png",
-    "bio": "Stainless Steel Products and all kinds of fabrication",
+    "bio": "Stainless Steel Products and all kinds of fabrication .\n Stainelss Steel Rebar supplier and Fabrication in Calgary for Alberta, BCand SK",
     "contactmessage": "Write to us, we will contact you shortly.",
     "email": "sales@everinox.me",
     "phone": "+971-50-827-2304",
@@ -15,6 +15,22 @@
       "state": "UAE",
       "zip": ""
     },
+    "addresses": [
+      {
+        "name": "EverInox Middle East",
+        "street": "Al Shmook Business Center, One UAQ, UAQ Free Trade Zone",
+        "city": "Umm Al Quwain",
+        "state": "UAE",
+        "zip": ""
+      },
+      {
+        "name": "EverInox Metals Inc",
+        "street": "8948, Elbow Dr SW, D271 Calgary",
+        "city": "Alberta",
+        "state": "Alberta",
+        "zip": "AB T2V 0H9"
+      }
+    ],
     "website": "http://www.everinox.me",
     "resumedownload": "http://www.everinox.me",
     "social": [

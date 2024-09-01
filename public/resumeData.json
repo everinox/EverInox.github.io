@@ -1,16 +1,16 @@
 {
   "main": {
     "name": "Everinox Metals Inc.",
-    "description": "We deliver the top-notch quality products and services for your fabrication needs!",
+    "description": "We deliver Rebar, Round Bars, Wires and all metals Fabrication.",
     "image": "everinox.png",
     "image2": "everinox-ca-bg.png",
     "bio": "Stainless Steel Products and all kinds of fabrication",
-    "bio2": "Stainelss Steel Rebar supplier and fabrication in Calgary for Alberta, BC and SK",
+    "bio2": "Stainelss Steel Rebar supplier and fabrication in Calgary for Alberta, BC and SK.",
     "contactmessage": "Write to us, we will contact you shortly.",
     "email": "sales@everinox.me",
     "phone": "+971-50-827-2304",
-    "github": "https://github.com/nordicgiant2/react-nice-resume",
-    "project": "https://github.com/nordicgiant2/react-nice-resume",
+    "github": "https://github.com/everinox/everinox",
+    "project": "https://github.com/jashif/",
     "address": {
       "street": "Al Shmook Business Center, One UAQ, UAQ Free Trade Zone",
       "city": "Umm Al Quwain",
@@ -23,7 +23,8 @@
         "street": "Al Shmook Business Center, One UAQ, UAQ Free Trade Zone",
         "city": "Umm Al Quwain",
         "state": "UAE",
-        "zip": ""
+        "zip": "",
+        "mobile": "+971-50-827-2304"
       },
       {
         "name": "EverInox Metals Inc",
@@ -31,7 +32,7 @@
         "city": "Alberta",
         "state": "Alberta",
         "zip": "AB T2V 0H9",
-        "mobile": "+15875733277"
+        "mobile": "+1-587-573-3277"
       }
     ],
     "website": "http://www.everinox.me",

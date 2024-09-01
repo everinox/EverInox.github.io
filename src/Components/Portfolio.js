@@ -1,44 +1,39 @@
-import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import React from 'react';
+import Zmage from 'react-zmage';
+import Fade from 'react-reveal';
 
-let id = 0;
-class Portfolio extends Component {
-  render() {
-    if (!this.props.data) return null;
+const Portfolio = ({ data }) => {
+  console.log(data);
+  if (!data) return null;
 
-    const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
+  return (
+    <section id="portfolio">
+      <Fade left duration={1000} distance="40px">
+        <div className="row">
+          <div className="twelve columns collapsed">
+            <h1>Check Out Some of our Works.</h1>
 
-      return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
-        </div>
-      );
-    });
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
+              {data.projects.map(project => {
+                const projectImage = `images/portfolio/${project.image}`;
 
-    return (
-      <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of our Works.</h1>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
+                return (
+                  <div key={project.title} className="columns portfolio-item">
+                    <div className="item-wrap">
+                      <Zmage alt={project.title} src={projectImage} />
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </Fade>
-      </section>
-    );
-  }
-}
+        </div>
+      </Fade>
+    </section>
+  );
+};
 
 export default Portfolio;

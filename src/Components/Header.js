@@ -1,12 +1,12 @@
-import React from "react";
-import ParticlesBg from "particles-bg";
-import Fade from "react-reveal";
-import Zmage from "react-zmage";
+import React from 'react';
+import ParticlesBg from 'particles-bg';
+import Fade from 'react-reveal';
+import Zmage from 'react-zmage';
 
 const Header = ({ data }) => {
   if (!data) return null;
 
-  const { name, description, image, image2,bio2 } = data;
+  const { name, description, image, image2, bio2 } = data;
 
   return (
     <header id="home">
@@ -32,6 +32,11 @@ const Header = ({ data }) => {
             </a>
           </li>
           <li>
+            <a className="smoothscroll" href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li>
             <a className="smoothscroll" href="#contact">
               Contact
             </a>
@@ -45,13 +50,13 @@ const Header = ({ data }) => {
             <Zmage alt={name} src={`images/${image2}`} />
           </Fade>
           <Fade bottom duration={1200}>
-            <h3>{bio2}.</h3>
+            <h3>{bio2}</h3>
           </Fade>
           <Fade bottom>
             <Zmage alt={name} src={`images/${image}`} />
           </Fade>
           <Fade bottom duration={1200}>
-            <h3>{description}.</h3>
+            <h3>{description}</h3>
           </Fade>
 
           <hr />

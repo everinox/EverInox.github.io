@@ -5,7 +5,7 @@
     "image": "everinox.png",
     "image2": "everinox-ca-bg.png",
     "bio": "Stainless Steel Products and all kinds of fabrication",
-    "bio2": "Stainelss Steel Rebar supplier and Fabrication in Calgary for Alberta,BC and SK",
+    "bio2": "Stainelss Steel Rebar supplier and fabrication in Calgary for Alberta, BC and SK",
     "contactmessage": "Write to us, we will contact you shortly.",
     "email": "sales@everinox.me",
     "phone": "+971-50-827-2304",
@@ -30,7 +30,8 @@
         "street": "8948, Elbow Dr SW, D271 Calgary",
         "city": "Alberta",
         "state": "Alberta",
-        "zip": "AB T2V 0H9"
+        "zip": "AB T2V 0H9",
+        "mobile": "+15875733277"
       }
     ],
     "website": "http://www.everinox.me",

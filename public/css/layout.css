@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   
+
    text-align: center;
    overflow: hidden;
 }
@@ -65,7 +65,7 @@ header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #ddd;
    margin: 0 auto;
-   width: 70%;
+   width: 90%;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -1011,7 +1011,7 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 .social .btn{
    padding-left: 30px;
-   padding-right: 30px; 
+   padding-right: 30px;
 }
 .social .btn i{
    margin-right: 15px;
